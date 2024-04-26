@@ -162,7 +162,7 @@ header .navbar.nav-tog {
   justify-content: center;
   flex-wrap: wrap;
   background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.05)),
-    url(/assets/pexels-aleksandar-pasaric-325185.jpg);
+    url("pexels-aleksandar-pasaric-325185.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -271,7 +271,7 @@ header .navbar.nav-tog {
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url(/assets/pexels-sebastiaan-stam-1097456.jpg);
+    url("pexels-sebastiaan-stam-1097456.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ header .navbar.nav-tog {
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url(/assets/vecteezy_abstract-light-lens-flare-reflex-glass-surface-color_6241243_407.jpg);
+    url("vecteezy_abstract-light-lens-flare-reflex-glass-surface-color_6241243_407.jpg");
 }
 
 .catalogue .heading {
