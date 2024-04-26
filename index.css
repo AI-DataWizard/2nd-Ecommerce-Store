@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/*Variables*/
+
+:root {
+  --background: #fff;
+  --foreground: #333;
+  --color: #1565c0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 50px;
+  background-color: #1565c0;
+  align-items: center;
+  color: #333;
+}
+
+*::selection {
+  background: #333;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+}
+
+section {
+  padding: 10% 5%;
+}
+
+.btn {
+  padding: 0.6rem 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: #e65100;
+  color: #333;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.2rem;
+  color: #1565c0;
+  padding: 1rem;
+  padding: 6rem;
+  width: auto;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1565c0;
+  z-index: 100;
+  padding: 2rem 7%;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .logo p {
+  font-size: 1.4rem;
+}
+
+header .logo span {
+  text-transform: lowercase;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+header .navbar ul li a {
+  font-size: 1.5rem;
+  margin-left: 1.2rem;
+  color: #fff;
+  position: relative;
+}
+
+header .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  height: 0.3rem;
+  width: 0%;
+  background: #fff;
+  transition: 0.2s linear;
+}
+
+header .navbar ul li .active::before,
+header .navbar ul li a:hover::before {
+  left: 0;
+  width: 100%;
+}
+header .navbar ul li a:hover {
+  font-weight: bold;
+}
+header .menu {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-xmark {
+  transform: rotate(180deg);
+  transition: 1s ease;
+}
+
+header .navbar.nav-tog {
+  top: 12.15rem;
+}
+
+.home .image img {
+  height: 350px;
+  width: 550px;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.05)),
+    url(/assets/pexels-aleksandar-pasaric-325185.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 9rem;
+}
+
+.home .image {
+  padding: 1rem;
+  flex: 1 1 45rem;
+  text-align: center;
+}
+
+.home .content {
+  padding-top: 12rem;
+  flex: 1 1 55rem;
+}
+
+.home .content h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.home .content a {
+  display: flex;
+  justify-content: center;
+}
+
+.home .image img {
+  height: 70vh;
+  width: 550px;
+  padding-top: 4rem;
+}
+
+.core {
+  min-height: 100vh;
+  margin-top: -10rem;
+}
+
+.core .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.core .row .image {
+  text-align: center;
+  flex: 1 1 30rem;
+}
+
+.core .row .image img {
+  height: 65vh;
+  padding: 3rem 0;
+}
+
+.core .row .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+
+.core .row .box-container .box {
+  margin: 2rem;
+  padding: 2rem;
+  width: 27rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background: #f8f8ff;
+  border-radius: 0.5rem;
+}
+
+.core .row .box-container .box:hover {
+  color: #fff;
+  background-color: #1565c0;
+  transition: 0.2s ease;
+}
+
+.core .row .box-container .box:hover #icon {
+  color: #fff;
+}
+
+.core .row .box-container .box h3 {
+  font-size: 2rem;
+}
+
+.core .row .box-container .box h3 #icon {
+  color: #1565c0;
+  padding-right: 0.9rem;
+}
+
+.core .row .box-container .box p {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+.about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(/assets/pexels-sebastiaan-stam-1097456.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about .heading {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+  text-align: center;
+}
+
+.about .row .image img {
+  width: 85%;
+  border-radius: 0.5rem;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2.5rem;
+}
+
+.about .row .content h3 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.about .row .content p {
+  font-size: 1.8rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.about .row .content p #icon {
+  padding-right: 1.1rem;
+  color: #1565c0;
+}
+
+.about .row .content a {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.features {
+  min-height: 100vh;
+}
+
+.features .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features .box-container .box {
+  text-align: center;
+  margin: 1.5rem;
+  padding: 1rem;
+  border: 0.2rem solid #1565c0;
+  width: 30rem;
+}
+
+.features .box-container .box:hover {
+  border: 0.2rem solid #e65100;
+  background: #e65100;
+  color: white;
+  transform: scale(1.1);
+}
+
+.features .box-container .box:hover .icon {
+  background: #fff;
+  color: #e65100;
+}
+
+.features .box-container .box:hover p {
+  color: #eee;
+}
+
+.features .box-container .box .icon {
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #1565c0;
+  color: #fff;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+}
+
+.features .box-container .box p {
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.catalogue {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(/assets/vecteezy_abstract-light-lens-flare-reflex-glass-surface-color_6241243_407.jpg);
+}
+
+.catalogue .heading {
+  color: #fff;
+}
+
+.catalogue .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalogue .box-container .box {
+  margin: 1.5rem;
+  padding: 1rem;
+  width: 50rem;
+  background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogue .box-container .box .image {
+  padding: 1rem;
+}
+.catalogue .box-container .box .image img {
+  padding: 0.3rem;
+  width: 20rem;
+  border-right: 0.1rem solid #333;
+}
+
+.catalogue .box-container .box .content {
+  padding: 1rem;
+}
+
+.catalogue .box-container .box .content h3 {
+  font-size: 3rem;
+}
+.catalogue .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.catalogue .box-container .box .content .price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+.contact .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form {
+  flex: 1 1 40rem;
+  background: #f8f8ff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 4rem;
+}
+
+.contact form .box {
+  height: 5rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #1565c0;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.contact form textarea {
+  height: 15rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #1565c0;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  resize: none;
+}
+
+.contact form .btn {
+  width: 100%;
+}
+
+.contact form .inp {
+  border: none;
+}
+
+.contact form .btn:hover {
+  transform: none;
+}
+
+.contact .email {
+  text-transform: none;
+}
+
+.contact .content {
+  flex: 1 1 70rem;
+  padding: 4rem;
+}
+
+.contact .content h3 {
+  font-size: 4rem;
+  color: #1565c0;
+}
+
+.contact .content p {
+  font-size: 1.4rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+.contact .content .icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact .content .icons p {
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact .content .icons #icon {
+  font-size: 2rem;
+  color: #1565c0;
+  padding-right: 1rem;
+}
+
+.footer {
+  background: #708090;
+  text-align: center;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share h3 {
+  font-size: 3rem;
+  color: #f8f8ff;
+}
+
+.footer .share #icon {
+  font-size: 3rem;
+  color: #1565c0;
+  margin: 3rem 1.4rem;
+}
+
+.footer .share #icon:hover {
+  color: #e65100;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: #2a3439;
+  color: #f8f8ff;
+}
+
+.footer .credit a {
+  color: #1565c0;
+}
+
+.footer .credit a:hover {
+  color: #e65100;
+}
+
+/*Media queries*/
+@media (max-width: 915px) {
+  html {
+    font-size: 47%;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    background: var(--color);
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    z-index: 0;
+  }
+  header .navbar ul li a::before {
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+    background: #e65100;
+  }
+
+  .home .content h1 {
+    text-align: center;
+  }
+
+  .core .row .image {
+    display: none;
+  }
+
+  .contact .content {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 663px) {
+  html {
+    font-size: 44%;
+  }
+
+  .home .content h1 {
+    font-size: 4.7rem;
+  }
+
+  .home .image img {
+    height: auto;
+    width: 90%;
+  }
+
+  .heading {
+    width: auto;
+  }
+
+  .catalogue .box-container .box {
+    flex-flow: column;
+  }
+
+  .catalogue .box-container .box .image img {
+    width: 85%;
+    border: none;
+  }
+}
