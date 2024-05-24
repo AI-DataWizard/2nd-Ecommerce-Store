@@ -578,12 +578,16 @@ header .navbar.nav-tog {
     display: block;
   }
 
-  header .navbar {
+header .navbar {
     position: fixed;
-    top: 0;
+    top: -150%;
     left: 0;
     width: 100%;
     background: #333;
+  }
+
+  header .navbar.active {
+    top: 0;
   }
 
   header .navbar ul {
